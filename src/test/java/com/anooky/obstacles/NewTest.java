@@ -1,14 +1,12 @@
 package com.anooky.obstacles;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterSuite;
 
 public class NewTest {
 	
-WebDriver driver = new FirefoxDriver();
+WebDriver driver = null;
 	
   @Test
   public void f() {
@@ -26,5 +24,6 @@ WebDriver driver = new FirefoxDriver();
   public void afterSuite() {
 	  driver.quit();
   }
+  
 
 }
